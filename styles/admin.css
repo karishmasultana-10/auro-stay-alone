@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Admin Panel Button */
+#admin-btn {
+    background-color: #007b5e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#admin-btn:hover {
+    background-color: #005a43;
+}
+
+/* Admin Panel Container */
+#admin-panel {
+    background: #a3d8b5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: 20px auto;
+    display: none; 
+    color: #08523f;
+}
+
+/* Date Picker and Add Button */
+#closed-date-picker {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Closed Dates List */
+#closedDatesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#closedDatesList li {
+    background: #e3f2fd;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete Button */
+#closedDatesList button {
+    background-color: #dc3545;
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+#closedDatesList button:hover {
+    background-color: #b02a37;
+}

@@ -1,0 +1,274 @@
+/* General Section */
+.rooms-section {
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  padding: 40px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.rooms-section + .rooms-section {
+  padding-top: 30px;  
+  margin-top: -20px;  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .rooms-section {
+    padding-top: 20px !important;
+  }
+}
+
+/* Section Headings */
+.section-heading {
+  margin-top: 10px; 
+}
+
+.section-heading,
+.rooms-section > h2 {
+  font-size: 2.8rem;
+  color: #003049;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-heading::after,
+.rooms-section > h2::after {
+  content: "";
+  width: 60px;
+  height: 5px;
+  background-color: #ff7f50;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+/*  Responsive styling for mobile screens */
+@media (max-width: 600px) {
+  .section-heading,
+  .rooms-section > h2 {
+    font-size: 1.6rem !important;   
+    margin-bottom: 30px !important;
+      .section-heading {
+    margin-top: 5px; 
+  }
+  }
+
+  .section-heading::after,
+  .rooms-section > h2::after {
+    width: 40px;
+    height: 4px;
+  }
+}
+
+/* Villa Cards */
+.villa-card {
+  background: #ffffff;
+  padding: 45px 35px;
+  margin-bottom: 50px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.villa-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.villa-card h3 {
+  font-size: 2.2rem;
+  color: #0077b6;
+  margin-bottom: 15px;
+  border-left: 5px solid #0077b6;
+  padding-left: 15px;
+}
+
+.villa-card p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Price & Facilities List */
+.price-options ul,
+.facilities ul {
+  list-style: none;
+  margin: 12px 0 0;
+  padding-left: 0;
+}
+
+.price-options li,
+.facilities li {
+  font-size: 1.05rem;
+  color: #444;
+  margin: 5px 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.price-options li::before,
+.facilities li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.book-now-btn {
+  display: inline-block;
+  background-color: #003049;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.book-now-btn:hover {
+  background-color: #00557f;
+  transform: translateY(-2px);
+}
+
+.book-now-btn:active {
+  background-color: #002437;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .book-now-btn {
+    display: inline-block;
+    padding: 1px 10px; 
+    padding-bottom: 6px;            
+    font-size: 0.9rem;             
+    border-radius: 6px;            
+    margin: 12px auto 0;
+    text-align: center;
+    width: auto;                   
+    max-width: 200px;              
+  }
+
+  .book-now-btn:hover {
+    transform: translateY(-1px);   
+  }
+
+  .book-now-btn:active {
+    transform: translateY(0);
+  }
+}
+
+/* Our Rooms Image Gallery */
+
+.gallery-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-grid a {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Override for Tablets */
+@media (max-width: 992px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  Override for Mobile: still 2 columns */
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .gallery-grid img {
+    height: 150px;
+  }
+}
+
+ .gallery-section > p {
+  font-size: 1.15rem;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.gallery-section > h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #003049;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+/* Footer */
+footer {
+  background-color: #002030;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 60px;
+  font-size: 0.95rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .section-heading,
+  .rooms-section > h2 {
+    font-size: 2rem;
+  }
+
+  .villa-card {
+    padding: 30px 20px;
+  }
+
+  .villa-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .villa-card p,
+  .price-options li,
+  .facilities li {
+    font-size: 1rem;
+  }
+
+  .rooms-section > p {
+    font-size: 1rem;
+  }
+}

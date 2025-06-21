@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Manage Closed Dates</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+
+    <button id="admin-btn">Open Admin Panel</button>
+
+    <div id="admin-panel" style="display: none;">
+        <h2>Admin Panel - Manage Closed Dates</h2>
+
+        <!-- Date Picker Input -->
+        <input type="date" id="closed-date-picker">
+        <button onclick="addClosedDate()">Add Date</button>
+
+        <h3>Closed Dates:</h3>
+        <ul id="closedDatesList"></ul>
+    </div>
+
+    <script src="scripts/admin.js"></script>
+    
+</body>
+</html>

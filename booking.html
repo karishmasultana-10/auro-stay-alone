@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- ── Favicons ── -->
+  <link rel="icon" type="image/png" sizes="32x32"  href="/images/booking-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/booking-icon.png" />
+  <title>Booking – Auro Stay Alone</title>
+  <link rel="stylesheet" href="styles/booking.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/booking.js" defer></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-wrapper">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Logo" class="site-logo">
+        <h1 class="logo">Auro Stay Alone</h1>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="booking.html" class="active">Booking</a></li>
+          <!-- <li><a href="contact.html">Contact Us</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="booking-form-section">
+    <h2>Book Your Stay</h2>
+    <form id="bookingForm">
+      <label>Name:
+        <input type="text" id="name" required />
+      </label>
+      <label>Mobile Number:
+        <input type="tel" id="mobile" required />
+      </label>
+      <label>Email:
+        <input type="email" id="email" required />
+      </label>
+      <label>Check-in Date:
+        <input type="date" id="checkin" required />
+      </label>
+      <label>Check-out Date:
+        <input type="date" id="checkout" required />
+      </label>
+      <label>Number of Guests:
+        <input type="number" id="guests" min="1" required />
+      </label>
+      <label>Select Villa:
+        <select id="villa" required onchange="updateRoomOptions()">
+          <option value="">-- Select --</option>
+          <option value="Villa 1">Villa 1</option>
+          <option value="Villa 2">Villa 2</option>
+          <option value="Full Property">Entire Property</option>
+        </select>
+      </label>
+
+      <div id="room-options" style="display: none; margin-bottom: 15px;"></div>
+
+      <label>Breakfast Included:
+        <select id="breakfast" required>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </label>
+
+      <button type="button" onclick="calculatePrice()">Check Price</button>
+
+      <div id="price-summary" style="display: none;">
+        <p><strong>Total Price:</strong> ₹<span id="total-price"></span></p>
+        <p><strong>Advance (20%):</strong> ₹<span id="advance-price"></span></p>
+        <p><strong>Balance at Stay:</strong> ₹<span id="balance-price"></span></p>
+      </div>
+
+      <button type="submit" style="margin-top: 20px;">Proceed</button>
+    </form>
+  </section>
+
+  <div id="closedDatesNotice" class="closed-dates-box" style="display: none;">
+    <h3>⚠️ Unavailable Dates</h3>
+    <ul id="closedDatesList"></ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Auro Stay Alone – All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

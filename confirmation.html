@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- ── Favicons ── -->
+  <link rel="icon" type="image/png" sizes="32x32"  href="/images/confirm-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/confirm-icon.png" />
+  <title>Booking Confirmation</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</head>
+<body>
+  <div class="confirmation-container">
+    <h1>Booking Confirmation</h1>
+
+    <div id="confirmation-details">
+      <!-- Details will be filled dynamically -->
+    </div>
+
+    <button id="proceedPayment">Pay Now</button>
+  </div>
+
+  <script src="scripts/confirmation.js"></script>
+</body>
+</html>
