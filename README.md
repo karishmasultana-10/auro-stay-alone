@@ -1,3 +1,4 @@
+
 # 🏡 Auro Stay Alone
 
 A **static villa booking website** for _Auro Stay Alone_—a peaceful and cozy retreat near Auroville, Pondicherry.  
@@ -50,7 +51,7 @@ A **static villa booking website** for _Auro Stay Alone_—a peaceful and cozy r
 
 ## 📸 Screenshot
 
-![Website screenshot](https://aurostayalone.netlify.app/images/ss.jpeg)
+![ss](https://github.com/user-attachments/assets/db4133c8-c867-4198-97f2-4b6d118cd846)
 
 
 
